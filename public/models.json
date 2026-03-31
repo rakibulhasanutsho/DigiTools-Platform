@@ -1,0 +1,90 @@
+[
+  {
+    "id": 1,
+    "name": "Minimalist Gypsum Planter",
+    "description": "A handcrafted, eco-friendly flower pot with a smooth matte finish, perfect for modern desk setups.",
+    "price": 25.00,
+    "period": "one-time",
+    "tag": "Best Seller",
+    "tagType": "best-seller",
+    "features": ["Handmade", "Water-resistant coating", "Felt base protection"],
+    "icon": "Cactus"
+  },
+  {
+    "id": 2,
+    "name": "Design Studio Pro",
+    "description": "Full access to premium templates, branding tools, and high-resolution export options.",
+    "price": 15.99,
+    "period": "monthly",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": ["1000+ Vector Assets", "One-click background removal", "Cloud Storage"],
+    "icon": "Palette"
+  },
+  {
+    "id": 3,
+    "name": "CodeFlow Dashboard",
+    "description": "A responsive React-based admin template with built-in dark mode and API integration.",
+    "price": 49.00,
+    "period": "one-time",
+    "tag": "New",
+    "tagType": "new",
+    "features": ["React & Tailwind CSS", "TypeScript support", "Lifetime updates"],
+    "icon": "Code"
+  },
+  {
+    "id": 4,
+    "name": "Enterprise Analytics",
+    "description": "Advanced data tracking and real-time reporting for growing business teams.",
+    "price": 199.00,
+    "period": "yearly",
+    "tag": "Best Value",
+    "tagType": "popular",
+    "features": ["Unlimited projects", "Custom API access", "24/7 Priority support"],
+    "icon": "BarChart"
+  },
+  {
+    "id": 5,
+    "name": "Shapla Texture Pack",
+    "description": "High-resolution 3D textures for Photoshop and web background manipulation.",
+    "price": 12.00,
+    "period": "one-time",
+    "tag": "New",
+    "tagType": "new",
+    "features": ["4K Resolution", "Seamless patterns", "Commercial license"],
+    "icon": "Layers"
+  },
+  {
+    "id": 6,
+    "name": "Career Growth Kit",
+    "description": "Professional toolkit designed to optimize LinkedIn profiles and streamline job applications.",
+    "price": 0.00,
+    "period": "one-time",
+    "tag": "Free",
+    "tagType": "new",
+    "features": ["ATS optimization tips", "5 Resume templates", "Interview checklist"],
+    "icon": "Briefcase"
+  },
+  {
+    "id": 7,
+    "name": "Creative Suite Add-on",
+    "description": "Exclusive filters and 3D shape presets for professional graphic designers.",
+    "price": 9.99,
+    "period": "monthly",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": ["Smart object support", "Action presets", "Tutorial videos"],
+    "icon": "Edit"
+  },
+  {
+    "id": 8,
+    "name": "Smart Office Planner",
+    "description": "A digital organizational tool for managing retail inventory and team schedules.",
+    "price": 89.00,
+    "period": "yearly",
+    "tag": "Best Seller",
+    "tagType": "best-seller",
+    "features": ["Multi-user sync", "Mobile app access", "Automated backups"],
+    "icon": "Calendar"
+  }
+]
