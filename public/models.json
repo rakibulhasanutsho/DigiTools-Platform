@@ -8,7 +8,8 @@
     "tag": "Best Seller",
     "tagType": "best-seller",
     "features": ["Handmade", "Water-resistant coating", "Felt base protection"],
-    "icon": "Cactus"
+    "icon": "Cactus",
+    "image": "https://images.unsplash.com/photo-1485955900006-10f4d324d411?auto=format&fit=crop&q=80&w=400"
   },
   {
     "id": 2,
@@ -19,7 +20,8 @@
     "tag": "Popular",
     "tagType": "popular",
     "features": ["1000+ Vector Assets", "One-click background removal", "Cloud Storage"],
-    "icon": "Palette"
+    "icon": "Palette",
+    "image": "https://images.unsplash.com/photo-1558655146-d09347e92766?auto=format&fit=crop&q=80&w=400"
   },
   {
     "id": 3,
@@ -30,7 +32,8 @@
     "tag": "New",
     "tagType": "new",
     "features": ["React & Tailwind CSS", "TypeScript support", "Lifetime updates"],
-    "icon": "Code"
+    "icon": "Code",
+    "image": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=400"
   },
   {
     "id": 4,
@@ -41,7 +44,8 @@
     "tag": "Best Value",
     "tagType": "popular",
     "features": ["Unlimited projects", "Custom API access", "24/7 Priority support"],
-    "icon": "BarChart"
+    "icon": "BarChart",
+    "image": "https://images.unsplash.com/photo-1551288049-bbbda536ad79?auto=format&fit=crop&q=80&w=400"
   },
   {
     "id": 5,
@@ -52,7 +56,8 @@
     "tag": "New",
     "tagType": "new",
     "features": ["4K Resolution", "Seamless patterns", "Commercial license"],
-    "icon": "Layers"
+    "icon": "Layers",
+    "image": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&q=80&w=400"
   },
   {
     "id": 6,
@@ -63,7 +68,8 @@
     "tag": "Free",
     "tagType": "new",
     "features": ["ATS optimization tips", "5 Resume templates", "Interview checklist"],
-    "icon": "Briefcase"
+    "icon": "Briefcase",
+    "image": "https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&q=80&w=400"
   },
   {
     "id": 7,
@@ -74,7 +80,8 @@
     "tag": "Popular",
     "tagType": "popular",
     "features": ["Smart object support", "Action presets", "Tutorial videos"],
-    "icon": "Edit"
+    "icon": "Edit",
+    "image": "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&q=80&w=400"
   },
   {
     "id": 8,
@@ -85,6 +92,7 @@
     "tag": "Best Seller",
     "tagType": "best-seller",
     "features": ["Multi-user sync", "Mobile app access", "Automated backups"],
-    "icon": "Calendar"
+    "icon": "Calendar",
+    "image": "https://images.unsplash.com/photo-1531403009284-440f080d1e12?auto=format&fit=crop&q=80&w=400"
   }
 ]
