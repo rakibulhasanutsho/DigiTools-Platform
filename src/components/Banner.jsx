@@ -2,6 +2,7 @@ import React from 'react'
 import banner from "../assets/banner.png";
 
 
+
 export const Banner = () => {
   return (
     <div className='w-[1140px] mx-auto flex gap-10 my-15 items-center'>
