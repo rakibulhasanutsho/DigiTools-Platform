@@ -2,11 +2,14 @@ import { Navbar } from "./components/Navbar"
 import { Banner } from "./components/Banner"
 import { Status } from "./components/Status"
 import { Products } from "./components/Products"
-import { Models } from "./components/Models"
+import { useState } from "react"
 import Accounts from "./components/Accounts"
 import Transparent from "./components/Transparent"
 import Explore from "./components/Explore"
 import Carts from "./components/Carts"
+import { Models } from "./components/Models"
+
+
 
 const getModels = async () => {
   const res = await fetch("/models.json")
@@ -20,7 +23,11 @@ const getTransparent = async ()=> {
  const transparentPromise = getTransparent()
 
 function App() {
- 
+  const [activeTab, setActiveTab] = useState("Products")
+    
+    const [carts, setCarts] = useState([])
+    
+  
   return (
     <>
           
@@ -30,8 +37,9 @@ function App() {
     <Products></Products>
     
    
-      <Models modelPromise={modelPromise} ></Models>
-      <Carts></Carts>
+      {activeTab ==="Products" &&<Models modelPromise={modelPromise} setActiveTab={setActiveTab} carts={carts} setCarts ={setCarts} ></Models>}
+      
+      {activeTab ==="Cart" &&  <Carts carts={carts} setCarts={setCarts} setActiveTab={setActiveTab}></Carts>}
       <Accounts></Accounts>
       <Transparent transparentPromise ={transparentPromise}></Transparent>
       <Explore></Explore>

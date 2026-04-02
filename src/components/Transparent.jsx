@@ -17,7 +17,7 @@ export default  function Transparent ({transparentPromise}) {
                     <ul>
                         {
                             trans.features.map(feature =>
-                                <li><span>✔</span> {feature}</li>
+                                <li key={trans.id}><span>✔</span> {feature}</li>
                             )
                         }
                     </ul>
