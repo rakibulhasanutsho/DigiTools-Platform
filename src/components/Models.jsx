@@ -1,12 +1,14 @@
-import  {use} from 'react'
-import ModelCard from './ModelCard'
-import { useState } from "react"
-// import { designTool } from '../assets/products./design-tool.png'
+
+import { useState } from "react";
 
 
-import { Products } from './Products'
-export const Models = ({modelPromise, setActiveTab, carts, setCarts}) => {
-    const models = use(modelPromise)
+
+
+
+
+export const Models = ({activeTab, setActiveTab}) => {
+    // const [activeTab, setActiveTab] = useState("Products")
+    // console.log(activeTab);
    
    
   return (
@@ -23,11 +25,8 @@ export const Models = ({modelPromise, setActiveTab, carts, setCarts}) => {
 
             
         </div>
-        <div className='grid grid-cols-3 gap-4 bg-[#F2F2F2 space-y-5'>
-          {models.map(model=> 
-         <ModelCard carts={carts} setCarts={setCarts} key={model.id} model={model}></ModelCard>
-        )}
-        </div>
+        
+        
     </div>
   )
 }

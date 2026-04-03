@@ -16,8 +16,8 @@ export default  function Transparent ({transparentPromise}) {
                     <p><span className="text-[40px] font-bold "> {trans.price} </span><span className="text-[20px] text-[#627382]">{trans.billing_cycle}</span></p>
                     <ul>
                         {
-                            trans.features.map(feature =>
-                                <li key={trans.id}><span>✔</span> {feature}</li>
+                            trans.features.map((feature, index) =>
+                                <li key={index}><span>✔</span> {feature}</li>
                             )
                         }
                     </ul>

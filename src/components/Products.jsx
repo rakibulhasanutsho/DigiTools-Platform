@@ -1,11 +1,15 @@
 import React from 'react'
+import { use } from 'react'
+import ModelCard from './ModelCard'
 
 
-export const Products = () => {
-   
+export const Products = ({modelPromise}) => {
+   const models = use(modelPromise)
   return (
-    <div>
-
-    </div>
+    <div className='grid grid-cols-3 gap-4 bg-[#F2F2F2 space-y-5 w-[1140px] mx-auto'>
+          {models.map(model=> 
+         <ModelCard  key={model.id} model={model} ></ModelCard>
+        )}
+        </div>
   )
 }

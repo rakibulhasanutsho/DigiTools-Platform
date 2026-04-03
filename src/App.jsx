@@ -24,9 +24,9 @@ const getTransparent = async ()=> {
 
 function App() {
   const [activeTab, setActiveTab] = useState("Products")
-    
+    console.log(activeTab)
     const [carts, setCarts] = useState([])
-    
+    // console.log(carts)
   
   return (
     <>
@@ -34,12 +34,13 @@ function App() {
     <Navbar></Navbar>
     <Banner></Banner>
     <Status></Status>
-    <Products></Products>
     
-   
-      {activeTab ==="Products" &&<Models modelPromise={modelPromise} setActiveTab={setActiveTab} carts={carts} setCarts ={setCarts} ></Models>}
+    
+      <Models activeTab={activeTab} setActiveTab={setActiveTab }></Models>
+      {activeTab ==="Products" ? <Products className="w-[1140px] mx-auto" setActiveTab={setActiveTab} modelPromise={modelPromise}   ></Products> : null}
       
-      {activeTab ==="Cart" &&  <Carts carts={carts} setCarts={setCarts} setActiveTab={setActiveTab}></Carts>}
+      {activeTab ==="Cart" ?  <Carts setActiveTab={setActiveTab} carts={carts} setCarts={setCarts} ></Carts> :null}
+      
       <Accounts></Accounts>
       <Transparent transparentPromise ={transparentPromise}></Transparent>
       <Explore></Explore>

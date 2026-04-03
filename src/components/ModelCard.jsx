@@ -1,13 +1,15 @@
 import { useState } from "react"
-export default  function ModelCard({model, carts, setCarts}) {
+export default  function ModelCard({model}) {
     const [isBuy , setIsBought] = useState(false)
     const handleBuy = () =>{
          setIsBought(true)
-         setCarts(model)
+         
+         
     }
         
   return (
-     <div key={model.id} className='p-4 my-[26px] border border border-[#8697a7] rounded-xl' >
+     
+      <div key={model.id} className='p-4 my-[26px] border border border-[#8697a7] rounded-xl ' >
             <div className='my-[26px] '>
               {/* <img src={model.image} alt="" /> */}
               <p className=' max-w-25 text-center text-[#BB4D00] p-2 px-4 bg-[#FEF3C6] rounded-xl'>{model.icon}</p>
@@ -18,9 +20,9 @@ export default  function ModelCard({model, carts, setCarts}) {
             <p></p>
            <ul className='my-[26px] '>
             {
-              model.features.map((feature, id) =>{
+              model.features.map((feature, index) =>{
                 return (
-                  <li className='text-[16px] leading-[20px] text-[#627382]' key={id}>
+                  <li className='text-[16px] leading-[20px] text-[#627382]' key={index}>
                   <span className='bg-green-500 bg-clip-text text-transparent'>✔</span>
                   <span>{feature}</span>
                 </li>
@@ -33,6 +35,7 @@ export default  function ModelCard({model, carts, setCarts}) {
            </button>
 
           </div>
+     
           )
   
 }

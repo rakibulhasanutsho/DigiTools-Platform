@@ -1,4 +1,4 @@
-export default  function Carts(carts, SetCarts) {
+export default  function Carts(carts) {
   return (
     <div>
       <div>
