@@ -1,9 +1,17 @@
 import { useState } from "react"
+import { AiFillLayout } from "react-icons/ai"
 export default  function ModelCard({model, carts, setCarts}) {
     const [isBuy , setIsBought] = useState(false)
-    const handleBuy = () =>{
+    const handleBuy = (product) =>{
          setIsBought(true)
-         setCarts([...carts, model])
+        const  isExist = carts.find((item) => item.id === model.id)
+        if(!isExist){
+          setCarts([...carts, model])
+          alert("Product added to cart")
+        }
+        else{
+          alert("This product is already exist in your cart")
+        }
          
     }
         
