@@ -18,8 +18,10 @@ export const Models = ({ setActiveTab}) => {
             <p className='text-[16px] text-[#627382] leading-5 whitespace-normal'>Choose from our curated collection of premium digital products designed <br /> to boost your productivity and creativity.</p>
             
               <div className="tabs tabs-box justify-center w-[255px]  bg-blue-700 mx-auto">
-                <input type="radio" name="my_tabs_1" className="tab px-10 border " aria-label="Products" defaultChecked onClick={()=> setActiveTab("Products")} />
-                <input type="radio" name="my_tabs_1" className="tab px-10 border" aria-label="Cart" onClick={()=> setActiveTab("Cart")}  />
+                <input type="radio" name="my_tabs_1" className="tab px-10 border font-medium" aria-label="Products"
+                 defaultChecked
+                  onClick={()=> setActiveTab("Products")} />
+                <input type="radio" name="my_tabs_1" className="tab px-10 border font-medium" aria-label="Cart" onClick={()=> setActiveTab("Cart")}  />
                 
               </div>
 

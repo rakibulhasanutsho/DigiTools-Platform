@@ -31,6 +31,10 @@ function App() {
     const remainingCart = carts.filter(item => item.id !== id);
     setCarts(remainingCart);
   }
+  const removeAllCartProduct = () =>{
+    alert("Thank you for your purchase! Your order has been placed.")
+    setCarts([]);
+  }
   return (
     <>
           
@@ -42,7 +46,7 @@ function App() {
       <Models activeTab={activeTab} setActiveTab={setActiveTab }></Models>
       {activeTab ==="Products" ? <Products className="w-[1140px] mx-auto" setActiveTab={setActiveTab} modelPromise={modelPromise} carts={carts}  setCarts= {setCarts} ></Products> : null}
       
-      {activeTab ==="Cart" ?  <Carts setActiveTab={setActiveTab} carts={carts} removeCartProduct={removeCartProduct} ></Carts> :null}
+      {activeTab ==="Cart" ?  <Carts setActiveTab={setActiveTab} carts={carts} removeCartProduct={removeCartProduct} removeAllCartProduct={removeAllCartProduct} ></Carts> :null}
       
       <Accounts></Accounts>
       <Transparent transparentPromise ={transparentPromise}></Transparent>
