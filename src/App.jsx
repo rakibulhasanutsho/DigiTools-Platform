@@ -8,6 +8,8 @@ import Transparent from "./components/Transparent"
 import Explore from "./components/Explore"
 import Carts from "./components/Carts"
 import { Models } from "./components/Models"
+import Swal from "sweetalert2"
+
 
 
 
@@ -30,9 +32,25 @@ function App() {
   const removeCartProduct = (id) => {
     const remainingCart = carts.filter(item => item.id !== id);
     setCarts(remainingCart);
+    Swal.fire({
+      title:"Are you sure?",
+      text: "You won't be able to revert this!",
+      icon:"warning",
+      showConfirmButton:true,
+      confirmButtonColor:"#d33333",
+      cancelButtonColor:"#3085d6",
+      confirmButtonText:"Yes, delete it!"
+    })
   }
   const removeAllCartProduct = () =>{
-    alert("Thank you for your purchase! Your order has been placed.")
+    Swal.fire({
+      title:"success",
+      text:"Your order has been placed successfully",
+      icon:"success",
+      confirmButtonText:"Great!",
+      confirmButtonColor:"#101727"
+    })
+    
     setCarts([]);
   }
   return (

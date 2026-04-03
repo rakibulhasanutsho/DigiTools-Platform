@@ -1,5 +1,6 @@
 import { useState } from "react"
 import { AiFillLayout } from "react-icons/ai"
+import Swal from "sweetalert2"
 export default  function ModelCard({model, carts, setCarts}) {
     const [isBuy , setIsBought] = useState(false)
     const handleBuy = (product) =>{
@@ -7,10 +8,26 @@ export default  function ModelCard({model, carts, setCarts}) {
         const  isExist = carts.find((item) => item.id === model.id)
         if(!isExist){
           setCarts([...carts, model])
-          alert("Product added to cart")
+          
+          Swal.fire(
+            {
+            position:'top-end',
+            icon:'success',
+            title: 'Add to Cart',
+            showConfirmButton:'false',
+            timer:1500,
+            toast:true,
+          }
+          )
         }
         else{
-          alert("This product is already exist in your cart")
+          Swal.fire({
+            title:'Already Added',
+            text:"This item is already in your selection.",
+            icon:"info",
+            confirmButtonColor:"#3085d6"
+
+          })
         }
          
     }

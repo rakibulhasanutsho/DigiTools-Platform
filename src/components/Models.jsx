@@ -7,8 +7,7 @@ import { useState } from "react";
 
 
 export const Models = ({ setActiveTab}) => {
-    // const [activeTab, setActiveTab] = useState("Products")
-    // console.log(activeTab);
+   
    
    
   return (
