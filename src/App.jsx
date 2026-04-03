@@ -26,7 +26,7 @@ function App() {
   const [activeTab, setActiveTab] = useState("Products")
     console.log(activeTab)
     const [carts, setCarts] = useState([])
-    // console.log(carts)
+    
   
   return (
     <>
@@ -37,9 +37,9 @@ function App() {
     
     
       <Models activeTab={activeTab} setActiveTab={setActiveTab }></Models>
-      {activeTab ==="Products" ? <Products className="w-[1140px] mx-auto" setActiveTab={setActiveTab} modelPromise={modelPromise}   ></Products> : null}
+      {activeTab ==="Products" ? <Products className="w-[1140px] mx-auto" setActiveTab={setActiveTab} modelPromise={modelPromise} carts={carts}  setCarts= {setCarts} ></Products> : null}
       
-      {activeTab ==="Cart" ?  <Carts setActiveTab={setActiveTab} carts={carts} setCarts={setCarts} ></Carts> :null}
+      {activeTab ==="Cart" ?  <Carts setActiveTab={setActiveTab} carts={carts}  ></Carts> :null}
       
       <Accounts></Accounts>
       <Transparent transparentPromise ={transparentPromise}></Transparent>

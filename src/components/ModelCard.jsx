@@ -1,9 +1,9 @@
 import { useState } from "react"
-export default  function ModelCard({model}) {
+export default  function ModelCard({model, carts, setCarts}) {
     const [isBuy , setIsBought] = useState(false)
     const handleBuy = () =>{
          setIsBought(true)
-         
+         setCarts([...carts, model])
          
     }
         
