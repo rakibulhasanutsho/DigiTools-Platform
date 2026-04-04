@@ -1,9 +1,9 @@
-import { FaShoppingBasket } from "react-icons/fa"
+import { FaShoppingBasket, FaShoppingCart } from "react-icons/fa"
 import { useState } from "react"
-export default  function Carts({carts,removeCartProduct,removeAllCartProduct}) {
+export default  function Carts({carts,removeCartProduct,removeAllCartProduct,setActiveTab}) {
   const totalPrice = carts.reduce((sum, product) => sum + product.price, 0)
   const [isCheckOuted, setIsCheckOuted] = useState(false)
-  
+  console.log(setActiveTab)
   
   console.log(carts)
     return (
@@ -12,8 +12,10 @@ export default  function Carts({carts,removeCartProduct,removeAllCartProduct}) {
         { 
         carts.length === 0 ? (
           <div className="text-center py-20 bg-gray-50 rounded-2xl border-2 border-dashed border-gray-200">
+            <FaShoppingCart className="mx-auto" size={40}></FaShoppingCart>
             <h2 className="text-2xl font-semibold text-gray-400 mb-2 ">Your cart is empty!</h2>
-            <p className="text-[16px] text-gray-500">Looks like you haven't added anything to your cart yet.</p>
+            <p className="text-[16px] text-gray-500 mb-4">Looks like you haven't added anything to your cart yet.</p>
+            <button onClick={()=> setActiveTab("Products")} className="btn btn-primary bg-gradient-to-r from-[#4F39F6] to-[#9514FA] rounded-3xl border-none">Explore Products</button>
           </div>
         )
           :

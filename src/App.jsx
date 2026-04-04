@@ -28,6 +28,8 @@ function App() {
   const [activeTab, setActiveTab] = useState("Products")
     console.log(activeTab)
     const [carts, setCarts] = useState([])
+    // const [cartItems, setCartItems] = useState([])
+    const count = carts.length;
     
   const removeCartProduct = (id) => {
     const remainingCart = carts.filter(item => item.id !== id);
@@ -42,21 +44,33 @@ function App() {
       confirmButtonText:"Yes, delete it!"
     })
   }
+  
   const removeAllCartProduct = () =>{
-    Swal.fire({
+    carts.length === 0 ?(
+      Swal.fire({
+        title:"Empty Cart!",
+        text:"You cannot checkout an empty cart. Please add some products first.",
+        icon:"error",
+        showConfirmButton:"Back to Shop",
+        confirmButtonColor: "#3085d6"
+      })
+    ):
+    (
+      Swal.fire({
       title:"success",
       text:"Your order has been placed successfully",
       icon:"success",
       confirmButtonText:"Great!",
       confirmButtonColor:"#101727"
     })
+    )
     
     setCarts([]);
   }
   return (
     <>
           
-    <Navbar></Navbar>
+    <Navbar setActiveTab={setActiveTab} count={count}></Navbar>
     <Banner></Banner>
     <Status></Status>
     
