@@ -9,6 +9,7 @@ import Explore from "./components/Explore"
 import Carts from "./components/Carts"
 import { Models } from "./components/Models"
 import Swal from "sweetalert2"
+import Footer from "./components/Footer"
 
 
 
@@ -70,7 +71,7 @@ function App() {
   return (
     <>
           
-    <Navbar setActiveTab={setActiveTab} count={count}></Navbar>
+    <Navbar setActiveTab={setActiveTab} activeTab={activeTab} count={count}></Navbar>
     <Banner></Banner>
     <Status></Status>
     
@@ -83,6 +84,7 @@ function App() {
       <Accounts></Accounts>
       <Transparent transparentPromise ={transparentPromise}></Transparent>
       <Explore></Explore>
+      <Footer></Footer>
     
     
     </>

@@ -34,7 +34,7 @@ export default  function ModelCard({model, carts, setCarts}) {
         
   return (
      
-      <div key={model.id} className='p-4 my-5 border border border-[#8697a7] rounded-xl ' >
+      <div key={model.id} className='p-4 my-5 border  border-[#8697a720] rounded-xl shadow-md' >
             <div className='my-[26px] '>
               {/* <img src={model.image} alt="" /> */}
               <p className=' max-w-25 text-center text-[#BB4D00] p-2 px-4 bg-[#FEF3C6] rounded-xl'>{model.icon}</p>

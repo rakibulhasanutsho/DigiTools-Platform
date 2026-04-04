@@ -6,7 +6,7 @@ import { useState } from "react";
 
 
 
-export const Models = ({ setActiveTab}) => {
+export const Models = ({ setActiveTab, activeTab}) => {
    
    
    
@@ -19,8 +19,9 @@ export const Models = ({ setActiveTab}) => {
               <div className="tabs tabs-box justify-center w-[255px]  bg-blue-700 mx-auto ">
                 <input type="radio" name="my_tabs_1" className="tab px-10 border font-medium rounded-l-3xl" aria-label="Products"
                  defaultChecked
+                 checked={activeTab ==="Products"}
                   onClick={()=> setActiveTab("Products")} />
-                <input type="radio" name="my_tabs_1" className="tab px-10 border font-medium rounded-r-3xl" aria-label="Cart" onClick={()=> setActiveTab("Cart")}  />
+                <input type="radio" name="my_tabs_1" className="tab px-10 border font-medium rounded-r-3xl" aria-label="Cart" checked={activeTab ==="Cart"} onClick={()=> setActiveTab("Cart")}  />
                 
               </div>
 

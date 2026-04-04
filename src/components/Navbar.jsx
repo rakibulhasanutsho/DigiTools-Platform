@@ -1,7 +1,7 @@
 import React from 'react'
 import { FaShoppingCart  } from 'react-icons/fa'
 
-export const Navbar = ({count,setActiveTab}) => {
+export const Navbar = ({count,setActiveTab, activeTab}) => {
   console.log(count)
   return (
     <div className="navbar bg-base-100 shadow-sm ">
@@ -36,10 +36,10 @@ export const Navbar = ({count,setActiveTab}) => {
   <div className="navbar-end flex gap-4">
     <div className='flex relative'>
       <p className={`${count === 0 ? "hidden" : "bg-red-700 px-2 text-white z-1  text-center font-bold transform translate-x-1/2 -translate-y-1/2 rounded-full absolute top-0 right-0 "}`}>{count}</p>
-      <FaShoppingCart onClick={()=> setActiveTab("Cart")} size={34} className='cursor-pointer'></FaShoppingCart>
+      <FaShoppingCart  onClick={()=> setActiveTab("Cart")}  size={34} className={`cursor-pointer ${activeTab === 'Cart'}`}></FaShoppingCart>
     </div>
-    <a className=' btn bg-gradient-to-r from-[#dd18e4] to-[#f35ce6] rounded-3xl cursor-pointer font-semibold text-white'>Login</a>
-    <a className="btn bg-gradient-to-r from-[#4F39F6] to-[#9514FA]  rounded-3xl text-white">Get Started</a>
+    <a className=' btn hidden sm:flex bg-gradient-to-r from-[#dd18e4] to-[#f35ce6] rounded-3xl cursor-pointer font-semibold text-white'>Login</a>
+    <a className=" btn hidden sm:flex bg-gradient-to-r from-[#4F39F6] to-[#9514FA]  rounded-3xl text-white">Get Started</a>
   </div>
 </div>
   )
