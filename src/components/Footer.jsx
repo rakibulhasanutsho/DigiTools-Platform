@@ -45,10 +45,10 @@ export default  function Footer() {
             </div>
         </div>
        </div>
-       <hr className="text-[#FAFAFA] m-2 lg:mx-20" />
-       <div className="text-[#FAFAFA] flex justify-between p-20">
+       <hr className="text-[#FAFAFA] mx-5 lg:mx-20 " />
+       <div className="text-[#FAFAFA] space-y-5 text-center flex flex-col lg:flex-row  justify-between p-5 lg:p-20">
         <p>© 2026 Digitools. All rights reserved.</p>
-        <div className="flex gap-10">
+        <div className="flex flex-col text-center lg:flex-row gap-10">
             <p>Privacy Policy</p>
             <p>Terms of Service </p>
             <p>Cookies</p>

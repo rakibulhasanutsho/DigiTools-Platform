@@ -7,7 +7,7 @@ export default  function Carts({carts,removeCartProduct,removeAllCartProduct,set
   
   console.log(carts)
     return (
-      <div className="w-[1140px] mx-auto border border-gray-300 p-15 flex flex-col gap-4 rounded mb-20">
+      <div className="w-full lg:w-[1140px] mx-auto border border-gray-300 p-5 lg:p-15 flex flex-col gap-4 rounded mb-20">
         <h3 className="text-3xl font-bold ">Your Cart</h3>
         { 
         carts.length === 0 ? (
