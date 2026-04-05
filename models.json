@@ -1,0 +1,76 @@
+[
+  {
+    "id": 1,
+    "name": "Minimalist Gypsum Planter",
+    "description": "A handcrafted, eco-friendly flower pot with a smooth matte finish, perfect for modern desk setups.",
+    "price": 25.00,
+    "period": "one-time",
+    "tag": "Best Seller",
+    "tagType": "best-seller",
+    "features": ["Handmade", "Water-resistant coating", "Felt base protection"],
+    "icon": "Cactus",
+    "image": "https://images.unsplash.com/photo-1485955900006-10f4d324d411?auto=format&fit=crop&q=80&w=400"
+  },
+  {
+    "id": 2,
+    "name": "Design Studio Pro",
+    "description": "Full access to premium templates, branding tools, and high-resolution export options.",
+    "price": 15.99,
+    "period": "monthly",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": ["1000+ Vector Assets", "One-click background removal", "Cloud Storage"],
+    "icon": "Palette",
+    "image": "https://images.unsplash.com/photo-1558655146-d09347e92766?auto=format&fit=crop&q=80&w=400"
+  },
+  {
+    "id": 3,
+    "name": "CodeFlow Dashboard",
+    "description": "A responsive React-based admin template with built-in dark mode and API integration.",
+    "price": 49.00,
+    "period": "one-time",
+    "tag": "New",
+    "tagType": "new",
+    "features": ["React & Tailwind CSS", "TypeScript support", "Lifetime updates"],
+    "icon": "Code",
+    "image": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=400"
+  },
+  {
+    "id": 4,
+    "name": "Enterprise Analytics",
+    "description": "Advanced data tracking and real-time reporting for growing business teams.",
+    "price": 199.00,
+    "period": "yearly",
+    "tag": "Best Value",
+    "tagType": "popular",
+    "features": ["Unlimited projects", "Custom API access", "24/7 Priority support"],
+    "icon": "BarChart",
+    "image": "https://images.unsplash.com/photo-1551288049-bbbda536ad79?auto=format&fit=crop&q=80&w=400"
+  },
+  {
+    "id": 5,
+    "name": "Shapla Texture Pack",
+    "description": "High-resolution 3D textures for Photoshop and web background manipulation.",
+    "price": 12.00,
+    "period": "one-time",
+    "tag": "New",
+    "tagType": "new",
+    "features": ["4K Resolution", "Seamless patterns", "Commercial license"],
+    "icon": "Layers",
+    "image": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&q=80&w=400"
+  },
+  {
+    "id": 6,
+    "name": "Career Growth Kit",
+    "description": "Professional toolkit designed to optimize LinkedIn profiles and streamline job applications.",
+    "price": 0.00,
+    "period": "one-time",
+    "tag": "Free",
+    "tagType": "new",
+    "features": ["ATS optimization tips", "5 Resume templates", "Interview checklist"],
+    "icon": "Briefcase",
+    "image": "https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&q=80&w=400"
+  }
+
+ 
+]
