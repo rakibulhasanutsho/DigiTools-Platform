@@ -4,7 +4,7 @@ import Swal from "sweetalert2"
 
 export default  function ModelCard({model, carts, setCarts}) {
     const [isBuy , setIsBought] = useState(false)
-    const handleBuy = (product) =>{
+    const handleBuy = () =>{
          setIsBought(true)
         const  isExist = carts.find((item) => item.id === model.id)
         if(!isExist){

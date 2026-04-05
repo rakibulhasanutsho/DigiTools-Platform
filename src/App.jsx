@@ -10,15 +10,17 @@ import Carts from "./components/Carts"
 import { Models } from "./components/Models"
 import Swal from "sweetalert2"
 import Footer from "./components/Footer"
-
+import Spinner from "./components/Spinner"
 
 
 
 const getModels = async () => {
   const res = await fetch("/models.json")
   return res.json();
+  
 }
 const getTransparent = async ()=> {
+
   const res = await fetch ("/transparent.json")
   return res.json()
 }
@@ -27,9 +29,10 @@ const getTransparent = async ()=> {
 
 function App() {
   const [activeTab, setActiveTab] = useState("Products")
-    console.log(activeTab)
+  
+    
     const [carts, setCarts] = useState([])
-    // const [cartItems, setCartItems] = useState([])
+    
     const count = carts.length;
     
   const removeCartProduct = (id) => {
@@ -77,14 +80,17 @@ function App() {
     
     
       <Models activeTab={activeTab} setActiveTab={setActiveTab }></Models>
+      
       {activeTab ==="Products" ? <Products className="w-[1140px] mx-auto" setActiveTab={setActiveTab} modelPromise={modelPromise} carts={carts}  setCarts= {setCarts} ></Products> : null}
       
       {activeTab ==="Cart" ?  <Carts setActiveTab={setActiveTab} carts={carts} removeCartProduct={removeCartProduct} removeAllCartProduct={removeAllCartProduct} ></Carts> :null}
       
       <Accounts></Accounts>
+      
       <Transparent transparentPromise ={transparentPromise}></Transparent>
       <Explore></Explore>
       <Footer></Footer>
+      
     
     
     </>

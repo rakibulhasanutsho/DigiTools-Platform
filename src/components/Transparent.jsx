@@ -13,7 +13,7 @@ export default  function Transparent ({transparentPromise}) {
                 trans.plan_name === "Pro" ?
 
                 <div key= {trans.id} className=  "space-y-5 p-5 rounded-2xl flex flex-col bg-gradient-to-r from-[#4F39F6] to-[#9514FA] bg-[#F2F2F2] relative">
-                    <p className="bg-[#FEF3C6] px-3 p-2 w-30 rounded-3xl absolute top-[-20px] z-99 ml-20 lg:ml-25 text-amber-700    ">Most Popular</p>
+                    <p className="bg-[#FEF3C6] px-3 p-2 w-32 rounded-3xl absolute top-[-20px] z-99 ml-20 lg:ml-25 text-amber-700    ">Most Popular</p>
                     <p className="text-2xl font-bold text-white">{trans.plan_name}</p>
                     <p className="text-[16px] text-white leading-5">{trans.tagline}</p>
                     <p><span className="text-[40px] text-white font-bold "> {trans.price} </span><span className="text-[20px] text-white">{trans.billing_cycle}</span></p>
